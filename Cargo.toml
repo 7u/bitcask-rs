@@ -1,0 +1,23 @@
+[package]
+name = "bitcask"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ctor = "0.2"
+lru = "0.14"
+regex = "1.11"
+tempfile = "3"
+num_cpus = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tokio = { version = "1.45", features = [
+    "rt",
+    "macros",
+    "net",
+    "fs",
+    "sync",
+    "io-util",
+    "time",
+    "tracing",
+] }
