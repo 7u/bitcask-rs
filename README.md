@@ -48,7 +48,7 @@
    - 使用 `RwLock` + 单线程 Actor，是否足够？  
 
 3. **Tokio runtime 集成方式**  
-   - 方案 A：单线程 runtime，多个 client task 并发  
+   - 方案 A：单线程异步 runtime，多个 client task 并发  
    - 方案 B：顺序执行的 actor-style 驱动 task  
 
 
